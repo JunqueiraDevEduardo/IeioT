@@ -1,25 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SensoresL3"
+    android:orientation="horizontal"
     tools:ignore="MissingDefaultResource">
 
     <TextView
+        android:id="@+id/logo2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="l3"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <androidx.constraintlayout.widget.Guideline
+        android:layout_centerHorizontal="true"
+        android:textSize="70dp"
+        android:textColor="#1A63E2"
+        android:text="_[ I e i o T ]\_"/>
+    <TextView
+        android:id="@+id/inicio"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintGuide_end="257dp" />
+        android:layout_below="@id/logo2"
+        android:textSize="20dp"
+        android:text="_________________________________________________________________________________________________">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </TextView>
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inicio"
+        android:layout_centerHorizontal="true"
+        android:text="Dados dos Sensores"
+        android:textSize="40dp" />
+
+
+
+</RelativeLayout>
